@@ -29,6 +29,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
+import robocode.control.events.BattleCompletedEvent;
 import robocode.control.events.RoundEndedEvent;
 import robocode.control.events.RoundStartedEvent;
 import robocode.control.events.TurnEndedEvent;
@@ -36,24 +37,21 @@ import robocode.control.snapshot.IRobotSnapshot;
 import robocode.control.testing.RobotTestBed;
 
 /**
- * Test class for a simple feature - Radar system in ProtoBot.
+ * Test class skeleton for RobotTestbed.
  *
- * @author David Phung
+ * @author Markus Borg
  *
  */
 @RunWith(JUnit4.class)
-public class ST_F1_RadarSystem extends RobotTestBed {
+public class ST_ModuleA extends RobotTestBed {
 	
 	// constants used to configure this system test case
 	private String ROBOT_UNDER_TEST = "teamXX.ProtoBot*";
 	private String ENEMY_ROBOTS = "sample.SittingDuck";
 	private int NBR_ROUNDS = 1;
 	
-	private double previousHeading;
-	private boolean clockwise;
-	
 	/**
-	 * The names of the robots that want battling is specified.
+	 * The names of the robots robots in the battle are listed.
 	 * 
 	 * @return The names of the robots we want battling.
 	 */
@@ -63,7 +61,7 @@ public class ST_F1_RadarSystem extends RobotTestBed {
 	}
 
 	/**
-	 * Pick the amount of rounds that we want our robots to battle for.
+	 * Select the amount of rounds that we want our robots to battle for.
 	 *
 	 * @return Amount of rounds we want to battle for.
 	 */
@@ -73,41 +71,41 @@ public class ST_F1_RadarSystem extends RobotTestBed {
 	}
 
 	/**
-	 * Called after every turn. Used to check whether the radar spins clockwise or not by
-	 * comparing current radar heading with radar heading in the previous turn.
+	 * Called after every turn.
 	 */
 	@Override
 	public void onTurnEnded(TurnEndedEvent event) {
-		IRobotSnapshot bmb = event.getTurnSnapshot().getRobots()[0];
-		double radarHeading = Math.toDegrees(bmb.getRadarHeading());
-		//We base our test on the fact that the radar cannot turn more than 75 degrees per turn.
-		if (previousHeading + 75 >= 360 && radarHeading < 75) {
-			radarHeading += 360;
-		}
-		if (radarHeading - previousHeading <= 0 || radarHeading - previousHeading > 75) {
-			clockwise = false;
-		}
-		previousHeading = Math.toDegrees(bmb.getRadarHeading());
+		IRobotSnapshot egoBot = event.getTurnSnapshot().getRobots()[0];
+		IRobotSnapshot firstEnemy = event.getTurnSnapshot().getRobots()[1];
+		// Default does nothing. Add some assertion?
 	}
 	
 	/**
-	 * Called before each round. Used to set initial values of variables.
+	 * Called before each round.
 	 */
 	@Override
 	public void onRoundStarted(RoundStartedEvent event) {
-		IRobotSnapshot bmb = event.getStartSnapshot().getRobots()[0];
-		previousHeading = Math.toDegrees(bmb.getRadarHeading());
-		clockwise = true;
+		IRobotSnapshot egoBot = event.getStartSnapshot().getRobots()[0];
+		IRobotSnapshot firstEnemy = event.getStartSnapshot().getRobots()[1];
+		// Default does nothing. Add some assertion?
 	}
 	
 	/**
-	 * Called after each round. Used to assert that the radar has been spinning correctly the whole round.
+	 * Called after each round.
 	 */
 	@Override
-	public void onRoundEnded(RoundEndedEvent event) {
-		assertTrue("Check that the radar spins clockwise all the time", clockwise);
+	public void onRoundEnded(RoundEndedEvent event) {		
+		// Default does nothing. Add some assertion?
 	}
 
+	/**
+	 * Called after the battle.
+	 */
+	@Override
+	public void onBattleCompleted(BattleCompletedEvent event) {
+		// Default does nothing. Add some assertion?
+	}
+	
 	/**
 	 * Returns a comma or space separated list like: x1,y1,heading1,
 	 * x2,y2,heading2, which are the coordinates and heading of robot #1 and #2.
@@ -126,8 +124,6 @@ public class ST_F1_RadarSystem extends RobotTestBed {
 	 */
 	@Override
 	public String getInitialPositions() {
-		// Put BMB in top left corner facing right
-		// Put one SittingDuck in lower right corner and one in bottom left
 		return null;
 	}
 
