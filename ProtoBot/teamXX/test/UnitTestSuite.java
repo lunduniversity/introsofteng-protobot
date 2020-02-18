@@ -27,7 +27,8 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ MathUtilsTest.class /* Add more unit test classes when they are ready */ })
-public class BMBUnitTestSuite {
+@SuiteClasses({ MathUtilsTest.class, ModuleATest.class, 
+				ModuleBTest.class, ModuleCTest.class /* Add more unit test classes when they are ready */ })
+public class UnitTestSuite {
 
 }
