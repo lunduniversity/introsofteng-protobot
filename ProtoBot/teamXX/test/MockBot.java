@@ -21,16 +21,17 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-package se.lth.cs.etsa02.basicmeleebot.test;
+package teamXX.test;
 
-import se.lth.cs.etsa02.basicmeleebot.BasicMeleeBot;
+import etsa03.*;
+import teamXX.*;
 
 /**
  * MockBot - a mock robot to enable unit testing for ETSA02.
  *
  * @author Markus Borg
  */
-public class MockBot extends BasicMeleeBot {
+public class MockBot extends ProtoBot {
 	
 	private String name;
 	private double fakeEnergy;
@@ -44,12 +45,12 @@ public class MockBot extends BasicMeleeBot {
 	private double fakeGunTurnRight;
 	
 	/**
-	 * Construct a mock robot to be used as a substitute for BasicMeleeBot in unit testing.
+	 * Construct a mock robot to be used as a substitute for ProtoBot in unit testing.
 	 * It overrides calls to robocode's advanced robot class to prevent robocode's exceptions from being thrown.
 	 * Also it allows for an easy way to setup a robot for testing and to verify the output of classes that modify the robot's state.
 	 * </br></br>
 	 * The robot is setup using the input arguments. The gun starts with the same heading as the robot.
-	 * The current implementation only overrides the methods used by ETSA02's BasicMeleeBot.
+	 * The current implementation only overrides the methods used by ETSA03's BasicMeleeBot.
 	 * @param name
 	 * @param fakeEnergy
 	 * @param fakeHeading
@@ -62,8 +63,7 @@ public class MockBot extends BasicMeleeBot {
 		this.fakeEnergy = fakeEnergy;
 		this.fakeHeading = fakeHeading;
 		this.fakePosX = fakePosX;
-		this.fakePosY = fakePosY;
-		
+		this.fakePosY = fakePosY;	
 		fakeGunHeading = fakeHeading;
 	}
 	

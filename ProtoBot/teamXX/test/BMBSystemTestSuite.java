@@ -20,16 +20,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package se.lth.cs.etsa02.basicmeleebot.test;
+package teamXX.test;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ ST_F1_RadarSystem.class, ST_F2_ClosestEnemyTargeting.class,
-				ST_F3_AntiGravMovement.class, ST_F4_WallAvoidance.class, 
-	 			ST_Q_1vs1SpinBot.class, ST_Q_MeleeSpinBots.class })
+@SuiteClasses({ ST_F1_RadarSystem.class /* add more system test classes when they are ready */ })
 public class BMBSystemTestSuite {
 
 }
