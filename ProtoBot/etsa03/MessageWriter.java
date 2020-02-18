@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package se.lth.cs.etsa03;
+package etsa03;
 
 /**
  * A class to help composing ETSA03 RoboTalk messages.
