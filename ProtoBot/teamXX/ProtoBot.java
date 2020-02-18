@@ -42,6 +42,9 @@ public class ProtoBot extends TeamRobot {
 	 */
 	@Override
 	public void run() {
+		ModuleA subSysA = new ModuleA();
+		ModuleB subSysB = new ModuleB();
+		ModuleC subSysC = new ModuleC();
 		
 		while (true) {
 			setTurnRadarRight(Double.POSITIVE_INFINITY);
