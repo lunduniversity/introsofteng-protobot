@@ -33,6 +33,7 @@ import robocode.ScannedRobotEvent;
  * 
  * @author David Phung
  * Static utility class for basic mathematical operations.
+ * Feel free to extend this class with additional methods.
  *
  */
 public class MathUtils {
