@@ -2,10 +2,5 @@ language: java
 jdk: 
 - openjdk8
 
-matrix:
-- JOB="./gradlew build"
-- JOB2="./gradlew test"
-
-script: 
-- "$JOB"
-- "$JOB2"
+script:
+- ./gradlew build --scan
