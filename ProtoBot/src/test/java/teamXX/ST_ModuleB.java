@@ -23,7 +23,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package teamXX.test;
+package teamXX;
 
 import static org.junit.Assert.assertTrue;
 import org.junit.runner.RunWith;
@@ -43,7 +43,7 @@ import robocode.control.testing.RobotTestBed;
  *
  */
 @RunWith(JUnit4.class)
-public class ST_ModuleA extends RobotTestBed {
+public class ST_ModuleB extends RobotTestBed {
 	
 	// constants used to configure this system test case
 	private String ROBOT_UNDER_TEST = "teamXX.ProtoBot*";

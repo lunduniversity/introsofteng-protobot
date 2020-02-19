@@ -20,14 +20,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package teamXX.test;
+package teamXX;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ ST_ModuleA.class, ST_ModuleB.class, ST_ModuleC.class /* add more system test classes when they are ready */ })
+@SuiteClasses({ /*ST_ModuleA.class, ST_ModuleB.class, ST_ModuleC.class */ /* add more system test classes when they are ready */ })
 public class SystemTestSuite {
 
 }

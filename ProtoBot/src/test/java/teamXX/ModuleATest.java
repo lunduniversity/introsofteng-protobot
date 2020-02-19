@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-package teamXX.test;
+package teamXX;
 
 import static org.junit.Assert.assertEquals;
 import java.awt.geom.Point2D;
@@ -30,7 +30,7 @@ import org.junit.Test;
 
 import teamXX.MathUtils;
 
-public class ModuleBTest {
+public class ModuleATest {
 	
 	private int expectedValue;
 	private int actualValue;
