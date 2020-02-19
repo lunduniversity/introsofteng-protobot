@@ -3,11 +3,10 @@ jdk:
  - openjdk8
 
 before_install:
- - pwd
  - cd ProtoBot
  - pwd
  - ls -la
  - chmod +x gradlew
 
 script:
- - ./gradlew build --scan
+ - ./gradlew build
