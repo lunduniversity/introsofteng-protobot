@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/lunduniversity/introsofteng-protobot.svg?branch=gradle)](https://travis-ci.com/lunduniversity/introsofteng-protobot)
+
 # introsofteng-protobot
 
 Supplementary teaching material for "Introduction to Software Engineering" at Lund University, LTH. http://cs.lth.se/etsa03/
