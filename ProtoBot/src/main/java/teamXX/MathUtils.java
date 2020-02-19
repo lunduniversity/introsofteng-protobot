@@ -48,7 +48,8 @@ public class MathUtils {
 		double absBearing = e.getBearing() + robot.getHeading();
 		double x = robot.getX() + e.getDistance() * Math.sin(Math.toRadians(absBearing));
 		double y = robot.getY() + e.getDistance() * Math.cos(Math.toRadians(absBearing));
-		return new Point2D.Double(x, y);
+		return null;
+		//return new Point2D.Double(x, y);
 	}
 	
 	/** 
