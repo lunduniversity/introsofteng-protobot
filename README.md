@@ -2,7 +2,7 @@
 
 Supplementary teaching material for "Introduction to Software Engineering" at Lund University, LTH. http://cs.lth.se/etsa03/
 
-This repository contains a barebone robot for the LU Rumble. Clone this repository to get a starting point for the project.
+This repository contains a barebone robot for the LU Rumble. Clone this repository to get a starting point THAT DOES NOT USE ANY BUILD TOOL for the project.
 
 ## License
 
