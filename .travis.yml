@@ -4,6 +4,8 @@ jdk:
 
 before_install:
  - pwd
+ - cd ProtoBot
+ - pwd
  - ls -la
  - chmod +x /.gradlew
 
