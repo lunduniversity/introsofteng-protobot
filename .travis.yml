@@ -1,6 +1,10 @@
 language: java
 jdk: 
  - openjdk8
+ 
+ env:
+  global:
+    - CC_TEST_REPORTER_ID=FIND_ID_ON_CODECLIMATE
     
 before_install:
  - cd ProtoBot
@@ -18,6 +22,3 @@ script:
 after_script:
  - JACOCO_SOURCE_PATH=src/main/java ./cc-test-reporter format-coverage build/customJacocoReportDir/test/jacocoTestReport.xml --input-type jacoco
  - ./cc-test-reporter upload-coverage
- 
- after_success:
- - bash <(curl -s https://codecov.io/bash)
