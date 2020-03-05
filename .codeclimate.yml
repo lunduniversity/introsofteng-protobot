@@ -2,3 +2,5 @@ version: "2"
 plugins:
   sonar-java:
     enabled: true
+    config:
+      minimum_severity: critical
