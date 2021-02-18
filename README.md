@@ -1,5 +1,4 @@
 # introsofteng-protobot
-[![Build Status](https://travis-ci.com/lunduniversity/introsofteng-protobot.svg?branch=gradle)](https://travis-ci.com/lunduniversity/introsofteng-protobot)
 
 Supplementary teaching material for "Introduction to Software Engineering" at Lund University, LTH. http://cs.lth.se/etsa03/
 
@@ -7,7 +6,7 @@ This repository contains a barebone robot for the LU Rumble. Use this template r
 
 ## License
 
-Copyright © 2021. Dept. of Computer Science at Lund University, Lund, Sweden.
+Copyright © 2020-2021. Dept. of Computer Science at Lund University, Lund, Sweden.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
