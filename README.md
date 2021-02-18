@@ -1,3 +1,5 @@
+[![Run Gradle](https://github.com/lunduniversity/introsofteng-protobot/workflows/Run%20Gradle/badge.svg)](https://github.com/lunduniversity/introsofteng-protobot/actions)
+
 # introsofteng-protobot
 
 Supplementary teaching material for "Introduction to Software Engineering" at Lund University, LTH. http://cs.lth.se/etsa03/
