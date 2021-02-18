@@ -22,9 +22,3 @@ jobs:
         arguments: build
         build-root-directory: ProtoBot
         wrapper-directory: ProtoBot
-  coverage:
-    needs: [ gradle ]
-    name: Send Coverage
-    runs-on: ubuntu-latest
-    steps:
-    - uses: paambaati/codeclimate-action@v2.2.4
