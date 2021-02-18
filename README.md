@@ -7,7 +7,7 @@ This repository contains a barebone robot for the LU Rumble. Use this template r
 
 ## License
 
-Copyright © 2020. Dept. of Computer Science at Lund University, Lund, Sweden.
+Copyright © 2021. Dept. of Computer Science at Lund University, Lund, Sweden.
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 
