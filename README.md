@@ -1,6 +1,6 @@
-[![Run Gradle](https://github.com/lunduniversity/introsofteng-protobot/workflows/Run%20Gradle/badge.svg)](https://github.com/lunduniversity/introsofteng-protobot/actions)
-
 # introsofteng-protobot
+
+[![CodeScene Code Health](https://codescene.io/projects/43000/status-badges/code-health)](https://codescene.io/projects/43000)
 
 Supplementary teaching material for "Introduction to Software Engineering" at Lund University, LTH. http://cs.lth.se/etsa03/
 
